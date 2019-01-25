@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" conten="width=device-width, initial-scale=1.0">
+  <title>Phone Dialer</title>
+  <link href="icon.png" rel="icon" type="img/ico">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <!--jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <!--Tab Links-->
+  <div class="tab">
+    <button class="tablinks" id="dialertab">Dialer</button>
+    <button class="tablinks" id="contacttab">Contact List</button>
+    <button class="tablinks" id="addtab">Add Contact</button>
+  </div>
+  <!---Tab Content-->
+    <!--Dialer Tab-->
+      <div id="Dialer" class="tabcontent">
+     <div class="header">
+        <h2>Dialer</h2>
+        <input type="text">
+     </div>
+     <div class= "digits">
+      <div class="row">
+        <div class="col-3">
+            <button>1</button>
+        </div>
+        <div class="col-3">
+            <button>2</button>
+        </div>
+        <div class="col-3">
+            <button>3</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+            <button>4</button>
+        </div>
+        <div class="col-3">
+            <button>5</button>
+        </div>
+        <div class="col-3">
+            <button>6</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+            <button>7</button>
+        </div>
+        <div class="col-3">
+            <button>8</button>
+        </div>
+        <div class="col-3">
+            <button>9</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <button>*</button>
+        </div>
+        <div class="col-3">
+          <button>0</button>
+        </div>
+        <div class="col-3">
+          <button>#</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-2" align="left">
+          <button>Dial</button>
+        </div>
+        <div class="col-2" align="right">
+          <button>Clear</button>
+        </div>
+      </div>
+    </div>
+   </div>
+    <!--Contact List Tab-->
+      <div id="ContactList" class="tabcontent">
+    <h2>Contact List</h2>
+  </div>
+    <!--Add Contact Tab-->
+      <div id="AddContact" class="tabcontent">
+    <h2>Add Contact</h2>
+  </div>
+
+  <!--External JS File-->
+  <script src="phone.js"></script>
+</body>
+</html>
