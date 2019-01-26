@@ -30,3 +30,53 @@ body {
 .tab button.active {
   background-color: #ccc;
 }
+
+/* Style the inputs */
+.digbtn {
+  width: 7%;
+  height: 35px;
+  font-family: Arial;
+  font-size: 15px;
+  text-align: center;
+}
+
+.actbtn {
+  width: 10%;
+  height: 35px;
+  font-family: Arial;
+  font-size: 15px;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.contactbtn {
+  width: 7%;
+  height: 35px;
+  font-family: Arial;
+  font-size: 15px;
+  text-align: center;
+}
+
+.addbtn {
+  width: 10%;
+  height: 35px;
+  font-family: Arial;
+  font-size: 15px;
+  text-align: center;
+  margin-left: 6px;
+}
+
+#dialerinput {
+  width: 22%;
+  height: 30px;
+}
+
+.addInput {
+  width: 22%;
+  height: 30px;
+}
+
+.labels {
+  font-size: 20px;
+  font-style: normal;
+}
