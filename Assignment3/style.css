@@ -13,6 +13,11 @@ li {
   font-size: 25px;
 }
 
+img {
+height: 60px;
+width: 60px;
+}
+
 /* Style the tab */
 .tab {
   overflow: hidden;
