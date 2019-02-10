@@ -11,7 +11,7 @@
 </head>
 <body>
   <!--Tab Links-->
-  <div class="tab">
+  <div class="tab" role="navigation">
     <button class="tablinks" id="dialertab" accesskey="d">Dialer</button>
     <button class="tablinks" id="contacttab" accesskey="l">Contact List</button>
     <button class="tablinks" id="addtab" accesskey="a">Add Contact</button>
@@ -19,10 +19,10 @@
   </div>
   <!---Tab Content-->
     <!--Dialer Tab-->
-      <div id="Dialer" class="tabcontent">
+      <div id="Dialer" class="tabcontent" role="navigation">
         <h2>Dialer</h2>
         <input id="dialerinput" type="text" accesskey="i"><br><br><br>
-        <div id="digits">
+        <div id="digits" role="button">
           <button class="digbtn" accesskey="1">1</button>
           <button class="digbtn" accesskey="2">2</button>
           <button class="digbtn" accesskey="3">3</button><br><br>
@@ -41,31 +41,34 @@
      </div>
 
     <!--Contact List Tab-->
-      <div id="ContactList" class="tabcontent">
+      <div id="ContactList" class="tabcontent" role="main">
         <h2>Contact List</h2>
-        <div class="contacts">
+        <div class="contacts" role="Table">
           <table>
             <tr>
               <td></td>
               <th>Phone</th>
               <th>Email</th>
+              <th>Avatar</th>
             </tr>
             <tr>
               <th>Keke</th>
               <td>7206886696</td>
               <td>keke.wu@colorado.edu</td>
+              <td><img src="keke.png" alt="keke's a ctd student"></td>
             </tr>
             <tr>
               <th>Supriya</th>
               <td>7205685966</td>
               <td>supriya.naidu@colorado.edu</td>
+              <td><img src="supriya.png" alt="supriya's a cs student"></td>
             </tr>
           </table>
         </div>
       </div>
 
     <!--Add Contact Tab-->
-      <div id="AddContact" class="tabcontent">
+      <div id="AddContact" class="tabcontent" role="main">
         <h2>Add Contact</h2>
         <form>
           <label class="labels" for="name">Name</label><br><br>
@@ -80,12 +83,15 @@
       </div>
 
       <!--About Tab-->
-        <div id="About" class="tabcontent">
+        <div id="About" class="tabcontent" role="main">
           <h2>About</h2>
           <ul>
             <li>Accessibility Features</li>
             <h4>1.Tab Control</h4> <p>You can navigate through the dialing pad using tab key.</p>
             <h4>2.Keyboard Shortcuts</h4> <p>You can access different dialing buttons, switch between different tabs using accesskeys.</p>
+            <h4>3.Accessible Table</h4> <p>The Contact List is displayed as an accessible table.</p>
+            <h4>4.Accessible Images</h4> <p>The images on the Contact List page come with descriptions even using the alt tag.</p>
+            <h4>5.ARIA Landmark Roles</h4> <p>"Main" and "Navigation" roles are added to the app.</p>
             <li>Keyboard Shortcuts</li>
           </ul>
         </div>
