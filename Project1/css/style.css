@@ -9,8 +9,7 @@
   src: url('../assets/CoolCrayon.ttf');
 }
 
-body,
-html {
+body,html {
     font-family: "myFont", sans-serif;
     min-height: 100vh;
     margin: 0;
@@ -74,6 +73,11 @@ h1 {
     opacity: .8
 }
 
+h2 {
+  font-size: 1.8em;
+  opacity: .8
+}
+
 p.subtitle {
     font-size: 1.2em;
     color: #bec3c9;
@@ -81,10 +85,12 @@ p.subtitle {
 }
 
 .cta {
+    font-family: "myFont", sans-serif;
     background-color: #ffae3c;
     padding: 1em;
     color: #fff;
     font-weight: bold;
+    font-size: 14px;
     margin-top: 2em;
     display: inline-block;
     border-radius: 5px;
@@ -168,6 +174,21 @@ p.subtitle {
     animation: chatblips 0.5s ease-in-out 3.5s forwards; /* assign animation to iota with 'chatblips' as keyframe name */
     opacity: 0;
     z-index: 2;
+}
+
+#container {
+  width: 600px;
+  margin: 100px;
+}
+
+#week {
+  width: 300px;
+  float: left;
+}
+
+#chart {
+  width: 300px;
+  float: left;
 }
 
 @keyframes monitorIn {
