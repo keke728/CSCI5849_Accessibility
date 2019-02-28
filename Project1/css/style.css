@@ -229,11 +229,26 @@ p.subtitle {
         grid-template-rows: 2fr;
     }
 
+    h2 {
+      font-size: 18px;
+      }
+
     #illustration {
       visibility: hidden;
     }
 
-    h2 {
-      width: 1px;
+    #container {
+      display: table-cell;
+      height: 100px;
+      vertical-align: middle;
+    }
+
+    #week {
+      margin-left: 10px;
+    }
+
+    #moodChartDiv {
+      height: 50px;
+      width: 20px;
     }
   }
