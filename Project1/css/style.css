@@ -44,22 +44,6 @@ body {
     padding: 10px;
 }
 
-@media (min-width: 768px) {
-    #home-container {
-        grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
-        grid-template-rows: 1fr;
-    }
-    #inner {
-        grid-column: 2;
-        grid-row: 1;
-    }
-
-    #illustration {
-        grid-column: 3;
-        grid-row: 1;
-    }
-}
-
 img#logo {
     width: 100px;
     margin-bottom: 1.6em;
@@ -220,3 +204,36 @@ p.subtitle {
         opacity: 1;
     }
 }
+
+
+/** Responsive design part **/
+@media (min-width: 768px) {
+    #home-container {
+        grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+        grid-template-rows: 1fr;
+    }
+    #inner {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #illustration {
+        grid-column: 3;
+        grid-row: 1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #home-container {
+        grid-template-columns: 7fr 5fr 1fr 5fr;
+        grid-template-rows: 2fr;
+    }
+
+    #illustration {
+      visibility: hidden;
+    }
+
+    h2 {
+      width: 1px;
+    }
+  }
