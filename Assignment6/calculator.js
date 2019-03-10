@@ -112,14 +112,14 @@ $(document).keyup(function(event) {
 
 // Condition 2: Three Keys with "N" + "M" + Spacebar
 	$(document).keyup(function(event) {
-		if (event.key == "m"){
+		if (event.key == "d"){
 			selectNext();
-		} else if (event.key == "n"){
+		} else if (event.key == "a"){
 			selectPrevious();
 		}
 	})
 	  .keyup(function(e){
-			if(event.keyCode == 32){
+			if(event.key == "s"){
 				clickSelectedItem();
 			}
 		});
