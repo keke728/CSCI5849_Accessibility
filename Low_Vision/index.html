@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" conten="width=device-width, initial-scale=1.0">
+  <title>Accessible Phone Dialer</title>
+  <link href="icon.png" rel="icon" type="img/ico">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <!--jQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <!--Tab Links-->
+  <div class="tab" role="navigation">
+    <button class="tablinks" id="dialertab" accesskey="d">Dialer</button>
+    <button class="tablinks" id="contacttab" accesskey="l">Contact List</button>
+    <button class="tablinks" id="addtab" accesskey="a">Add Contact</button>
+    <button class="tablinks" id="abouttab" accesskey="h">About</button>
+    <button class="tablinks" id="csstab" accesskey="v">Low Vision</button>
+    <button class="tablinks" id="csstabnormal" accesskey="n">Normal Vision</button>
+  </div>
+  <!---Tab Content-->
+    <!--Dialer Tab-->
+      <div id="Dialer" class="tabcontent" role="navigation">
+        <div role="region" aria-live="polite">
+        <label for="dialerinput"><h2>Dialer</h2></label>
+        <form>
+        <input id="dialerinput" type="text" accesskey="i"></form><br><br><br>
+        <div id="digits" role="button">
+          <button class="digbtn" accesskey="1">1</button>
+          <button class="digbtn" accesskey="2">2</button>
+          <button class="digbtn" accesskey="3">3</button><br><br>
+          <button class="digbtn" accesskey="4">4</button>
+          <button class="digbtn" accesskey="5">5</button>
+          <button class="digbtn" accesskey="6">6</button><br><br>
+          <button class="digbtn" accesskey="7">7</button>
+          <button class="digbtn" accesskey="8">8</button>
+          <button class="digbtn" accesskey="9">9</button><br><br>
+          <button class="digbtn" accesskey="*">*</button>
+          <button class="digbtn" accesskey="0">0</button>
+          <button class="digbtn" accesskey="#">#</button><br><br>
+          <button class="actbtn">Dial</button>
+          <button class="actbtn" id="clearBtn" accesskey="c">Clear</button>
+        </div>
+      </div>
+     </div>
+
+    <!--Contact List Tab-->
+      <div id="ContactList" class="tabcontent" role="main">
+        <div role="region" aria-live="polite">
+        <h2>Contact List</h2>
+        <div class="contacts" role="Table">
+          <table>
+            <tr>
+              <td></td>
+              <th>Phone</th>
+              <th>Email</th>
+              <th>Avatar</th>
+            </tr>
+            <tr>
+              <th>Keke</th>
+              <td>7206886696</td>
+              <td>keke.wu@colorado.edu</td>
+              <td><img src="keke.png" alt="keke's a ctd student"></td>
+            </tr>
+            <tr>
+              <th>Supriya</th>
+              <td>7205685966</td>
+              <td>supriya.naidu@colorado.edu</td>
+              <td><img src="supriya.png" alt="supriya's a cs student"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      </div>
+
+    <!--Add Contact Tab-->
+      <div id="AddContact" class="tabcontent" role="main">
+        <div role="region" aria-live="polite">
+        <h2>Add Contact</h2>
+        <form>
+          <label class="labels" for="name">Name</label><br><br>
+          <input class="addInput" id="name" placeholder="Keke Wu"><br><br>
+          <label class="labels" for="phone">Phone Number</label><br><br>
+          <input class="addInput" id="phone" placeholder="720-688-6696"><br><br>
+          <label class="labels" for="email">Email Address</label><br><br>
+          <input class="addInput" id="email" placeholder="keke.wu@colorado.edu"><br><br>
+        </form>
+        <button class="addbtn">Add Contact</button>
+        <button class="addbtn">Clear</button>
+      </div>
+      </div>
+
+      <!--About Tab-->
+        <div id="About" class="tabcontent" role="main">
+           <div role="region" aria-live="polite">
+            <h2>About</h2>
+            <ul>
+              <li>Accessibility Features</li>
+              <h4>1.Tab Control</h4> <p>You can navigate through the dialing pad using tab key.</p>
+              <h4>2.Keyboard Shortcuts</h4> <p>You can access different dialing buttons, switch between different tabs using accesskeys.</p>
+              <h4>3.Accessible Table</h4> <p>The Contact List is displayed as an accessible table.</p>
+              <h4>4.Accessible Images</h4> <p>The images on the Contact List page come with descriptions even using the alt tag.</p>
+              <h4>5.ARIA Landmark Roles</h4> <p>"Main" and "Navigation" roles are added to the app.</p>
+              <h4>6.ARIA Live Regions</h4> <p>An "ARIA live region" with the value "polite" is added to each tab div.</p>
+              <li>Keyboard Shortcuts</li><br>
+              <table>
+                <tr>
+                  <td></td>
+                  <th>Dialer Tab</th>
+                  <th>Contact List Tab</th>
+                  <th>Add Contact Tab</th>
+                  <th>About Tab</th>
+                  <th>Dial Input</th>
+                  <th>Dial Buttons</th>
+                  <th>Clear Button</th>
+                </tr>
+                <tr>
+                  <th>Windows</th>
+                  <td>Shift + Alt + d</td>
+                  <td>Shift + Alt + l</td>
+                  <td>Shift + Alt + a</td>
+                  <td>Shift + Alt + h</td>
+                  <td>Shift + Alt + i</td>
+                  <td>Shift + Alt + num</td>
+                  <td>Shift + Alt + c</td>
+                </tr>
+                <tr>
+                  <th>Mac</th>
+                  <td>Control + Option + d</td>
+                  <td>Control + Option + l</td>
+                  <td>Control + Option + a</td>
+                  <td>Control + Option + h</td>
+                  <td>Control + Option + i</td>
+                  <td>Control + Option + num</td>
+                  <td>Control + Option + c</td>
+                </tr>
+              </table>
+           </ul>
+          </div>
+        </div>
+
+  <!--External JS File-->
+  <script src="phone.js"></script>
+</body>
+</html>
