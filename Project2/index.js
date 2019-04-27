@@ -7,4 +7,4 @@ $('#startbtn').hover(
     const playPromise = sound.play();
     if (playPromise !== null) {
       playPromise.catch(() => {sound.play();})
-);
+});
