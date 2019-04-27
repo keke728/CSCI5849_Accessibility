@@ -6,5 +6,5 @@ $('#startbtn').hover(
     var sound = document.getElementById('btnAudio');
     const playPromise = sound.play();
     if (playPromise !== null) {
-      playPromise.catch(() => {sound.play();})
+      playPromise.catch(() => {sound.play();})}
 });
